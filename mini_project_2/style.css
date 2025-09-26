@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Inter", sans-serif;
+    margin: auto;
+}
+
+.container {
+    background-color: rgb(149, 61, 70);
+    min-height: calc(100vh - 40px);
+    padding: 20px;
+}
+.header-container {
+    display: grid;
+    grid-template-columns:  1fr 3fr;
+    align-items: center;
+}
+.left-header{
+    color: antiquewhite;
+    font-size:  40px;
+    cursor: context-menu;
+}
+.right-header {
+    display: grid;
+    grid-template-columns: 5fr 120px 1fr;
+    gap: 20px;
+}
+.search-input {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    cursor: pointer;
+}
+.search-input > input{
+    width: 100%;
+    padding: 8px 12px;
+    display: inline-block;
+    border: 1px solid antiquewhite;
+    background-color: antiquewhite;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.search-input > i, .upload, .account > i{
+    border-radius: 0 4px 4px 0;
+    background-color: antiquewhite;
+    padding: 12px 20px;
+    color: rgb(149,61,70);
+}
+.upload > input {
+    display: none;
+}
+.upload, .account > i {
+    border-radius: 4px;
+    cursor: pointer;
+}
+.account {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 5px;
+}
+.account-name {
+    color: antiquewhite;
+    cursor: context-menu;
+}
